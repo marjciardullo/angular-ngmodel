@@ -1,1 +1,31 @@
-<h1>OIII</h1>
+<h2 class="mt-2">Cálculo do juros composto</h2>
+<hr />
+<div class="container-fluid">
+  <div class="mb-3">
+    <label>Valor Aplicado (em R$):</label>
+    <input
+      class="form-control"
+      id="formGroupInput"
+      type="number"
+      step="0.01"
+      [(ngModel)]="va"
+    />
+  </div>
+  <div class="mb-3">
+    <label>Taxa de Juros (em %):</label>
+    <input
+      class="form-control"
+      id="formGroupInput"
+      type="number"
+      step="0.01"
+      [(ngModel)]="tj"
+    />
+  </div>
+  <div class="mb-3">
+    <label>Período (em meses):</label>
+    <input class="form-control" id="formGroupInput" type="number" step="0.01" [(ngModel)]=""/>
+  </div>
+
+  <h3>Valor total do juros composto:</h3>
+  <p></p>
+</div>
