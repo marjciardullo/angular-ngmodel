@@ -1,13 +1,33 @@
-<h2>JUROS</h2>
+<div class="container-fluid">
+  <div class="mb-3">
+    <label>Valor presente (em R$):</label>
+    <input
+      class="form-control"
+      id="formGroupInput"
+      type="number"
+      step="0.01"
+      [(ngModel)]="vp"
+    />
+  </div>
 
-<div>Valor presente (em R$):</div>
-<input type="number" step="0.01" [(ngModel)]="vp" />
+  <label>Juros (em %):</label>
+  <input
+    class="form-control"
+    id="formGroupInput"
+    type="number"
+    step="0.01"
+    [(ngModel)]="j"
+  />
 
-<div>Juros (em %):</div>
-<input type="number" step="0.01" [(ngModel)]="j" />
-
-<div>Período (em meses):</div>
-<input type="number" step="1" [(ngModel)]="n" />
-
-<h3>Valor futuro (em R$):</h3>
-<table></table>
+  <label>Período (em meses):</label>
+  <input
+    class="form-control"
+    id="formGroupInput"
+    type="number"
+    step="1"
+    [(ngModel)]="n"
+  />
+  <br />
+  <h3>Valor futuro (em R$):</h3>
+  <p>{{ getJuros() }}</p>
+</div>

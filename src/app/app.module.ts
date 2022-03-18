@@ -7,6 +7,7 @@ import { HelloComponent } from './hello.component';
 import { HomeComponent } from './home/home.component';
 import { JurosComponent } from './juros/juros.component';
 import { RouterModule } from '@angular/router';
+import { JcompostoComponent } from './jcomposto/jcomposto.component';
 
 @NgModule({
   imports: [
@@ -15,9 +16,16 @@ import { RouterModule } from '@angular/router';
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'juros', component: JurosComponent },
+      { path: 'jcomposto', component: JcompostoComponent },
     ]),
   ],
-  declarations: [AppComponent, HelloComponent, HomeComponent, JurosComponent],
+  declarations: [
+    AppComponent,
+    HelloComponent,
+    HomeComponent,
+    JurosComponent,
+    JcompostoComponent,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
