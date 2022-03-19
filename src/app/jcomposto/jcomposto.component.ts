@@ -17,14 +17,18 @@ export class JcompostoComponent implements OnInit {
 
   ngOnInit() {}
 
-  totalJuros(n: number) {
+  valorTotalJuros() {
+    return this.Juros(this.n);
+  }
+
+  Juros(n: number) {
     return this.va * Math.pow(1 + this.tj / 100, n);
   }
 
   periodoParcelas() {
     let parcelas: Number[] = [];
     for (let i = 1; i <= this.n; i++) {
-      parcelas.push(this.totalJuros(i));
+      parcelas.push(this.Juros(i));
     }
     return parcelas;
   }
