@@ -12,7 +12,7 @@ export class JcompostoComponent implements OnInit {
   constructor() {
     this.va = 25000;
     this.tj = 3;
-    this.n = 6;
+    this.n = 8;
   }
 
   ngOnInit() {}
