@@ -34,4 +34,20 @@
 
   <h3>Valor total do juros composto:</h3>
   <p>R$ {{ valorTotalJuros() }}</p>
+  <br />
+  <h3>Tabela de parcelas:</h3>
+  <table class="table">
+    <thead>
+      <tr>
+        <td>Mês</td>
+        <td>Total da parcela</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let parcela of periodoParcelas(); index as i">
+        <td>{{ i + 1 }}</td>
+        <td>R$ {{ parcela }}</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
