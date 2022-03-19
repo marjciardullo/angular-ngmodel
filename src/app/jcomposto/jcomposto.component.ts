@@ -9,6 +9,7 @@ export class JcompostoComponent implements OnInit {
   va: number;
   tj: number;
   n: number;
+  
   constructor() {
     this.va = 25000;
     this.tj = 3;
